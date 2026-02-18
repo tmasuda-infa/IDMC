@@ -1,0 +1,792 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "mp_test1",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "src -> tgt"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2026-02-18T06:06:26.546Z",
+        "name" : "src",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "MANDT"
+            },
+            "name" : "MANDT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KAPPL"
+            },
+            "name" : "KAPPL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KSCHL"
+            },
+            "name" : "KSCHL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ZZKUNNR_Z3"
+            },
+            "name" : "ZZKUNNR_Z3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KUNNR"
+            },
+            "name" : "KUNNR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ZZDIST"
+            },
+            "name" : "ZZDIST",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MATNR"
+            },
+            "name" : "MATNR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 40,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KFRST"
+            },
+            "name" : "KFRST",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DATBI"
+            },
+            "name" : "DATBI",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "DATAB"
+            },
+            "name" : "DATAB",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "KBSTAT"
+            },
+            "name" : "KBSTAT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KNUMH"
+            },
+            "name" : "KNUMH",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@37i48vxVyKEfYIkQOp9XCU",
+          "connectionName" : "MSSQL",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "dbo/A505_S",
+            "dbSchema" : "dbo",
+            "label" : "A505_S",
+            "objectName" : "A505_S",
+            "path" : "dbo/A505_S",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "MANDT",
+                "fieldType" : "CONNECTOR",
+                "label" : "MANDT",
+                "nativeName" : "MANDT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "KAPPL",
+                "fieldType" : "CONNECTOR",
+                "label" : "KAPPL",
+                "nativeName" : "KAPPL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "KSCHL",
+                "fieldType" : "CONNECTOR",
+                "label" : "KSCHL",
+                "nativeName" : "KSCHL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "ZZKUNNR_Z3",
+                "fieldType" : "CONNECTOR",
+                "label" : "ZZKUNNR_Z3",
+                "nativeName" : "ZZKUNNR_Z3",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "KUNNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "KUNNR",
+                "nativeName" : "KUNNR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "ZZDIST",
+                "fieldType" : "CONNECTOR",
+                "label" : "ZZDIST",
+                "nativeName" : "ZZDIST",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "MATNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "MATNR",
+                "nativeName" : "MATNR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 40,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "KFRST",
+                "fieldType" : "CONNECTOR",
+                "label" : "KFRST",
+                "nativeName" : "KFRST",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "DATBI",
+                "fieldType" : "CONNECTOR",
+                "label" : "DATBI",
+                "nativeName" : "DATBI",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "DATAB",
+                "fieldType" : "CONNECTOR",
+                "label" : "DATAB",
+                "nativeName" : "DATAB",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "KBSTAT",
+                "fieldType" : "CONNECTOR",
+                "label" : "KBSTAT",
+                "nativeName" : "KBSTAT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              },
+              {
+                "name" : "KNUMH",
+                "fieldType" : "CONNECTOR",
+                "label" : "KNUMH",
+                "nativeName" : "KNUMH",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_S"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2026-02-18T06:06:26.546Z",
+        "name" : "tgt",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "MANDT"
+            },
+            "name" : "MANDT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KAPPL"
+            },
+            "name" : "KAPPL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KSCHL"
+            },
+            "name" : "KSCHL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ZZKUNNR_Z3"
+            },
+            "name" : "ZZKUNNR_Z3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KUNNR"
+            },
+            "name" : "KUNNR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ZZDIST"
+            },
+            "name" : "ZZDIST",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MATNR"
+            },
+            "name" : "MATNR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 40,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KFRST"
+            },
+            "name" : "KFRST",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DATBI"
+            },
+            "name" : "DATBI",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "DATAB"
+            },
+            "name" : "DATAB",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "KBSTAT"
+            },
+            "name" : "KBSTAT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "KNUMH"
+            },
+            "name" : "KNUMH",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@37i48vxVyKEfYIkQOp9XCU",
+          "connectionName" : "MSSQL",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "dbo/A505_T",
+            "dbSchema" : "dbo",
+            "label" : "A505_T",
+            "objectName" : "A505_T",
+            "path" : "dbo/A505_T",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "MANDT",
+                "fieldType" : "CONNECTOR",
+                "label" : "MANDT",
+                "nativeName" : "MANDT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "KAPPL",
+                "fieldType" : "CONNECTOR",
+                "label" : "KAPPL",
+                "nativeName" : "KAPPL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "KSCHL",
+                "fieldType" : "CONNECTOR",
+                "label" : "KSCHL",
+                "nativeName" : "KSCHL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "ZZKUNNR_Z3",
+                "fieldType" : "CONNECTOR",
+                "label" : "ZZKUNNR_Z3",
+                "nativeName" : "ZZKUNNR_Z3",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "KUNNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "KUNNR",
+                "nativeName" : "KUNNR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "ZZDIST",
+                "fieldType" : "CONNECTOR",
+                "label" : "ZZDIST",
+                "nativeName" : "ZZDIST",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "MATNR",
+                "fieldType" : "CONNECTOR",
+                "label" : "MATNR",
+                "nativeName" : "MATNR",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 40,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "KFRST",
+                "fieldType" : "CONNECTOR",
+                "label" : "KFRST",
+                "nativeName" : "KFRST",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "DATBI",
+                "fieldType" : "CONNECTOR",
+                "label" : "DATBI",
+                "nativeName" : "DATBI",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "DATAB",
+                "fieldType" : "CONNECTOR",
+                "label" : "DATAB",
+                "nativeName" : "DATAB",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "KBSTAT",
+                "fieldType" : "CONNECTOR",
+                "label" : "KBSTAT",
+                "nativeName" : "KBSTAT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              },
+              {
+                "name" : "KNUMH",
+                "fieldType" : "CONNECTOR",
+                "label" : "KNUMH",
+                "nativeName" : "KNUMH",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/A505_T"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "MANDT",
+              "toField" : {
+                "name" : "MANDT"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-02-18 16:00:58 JST"
+}
