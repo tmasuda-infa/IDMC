@@ -1,0 +1,260 @@
+{
+  "content" : {
+    "description" : "コメント追加2",
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "mp_POC_INSERT_NO7",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "ソース -> ターゲット"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2026-01-19T02:31:58.591Z",
+        "name" : "ソース",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "NumTry"
+            },
+            "name" : "NumTry",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "testResults"
+            },
+            "name" : "testResults",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@801KPVAuSzMeVi47xrG3ay",
+          "connectionName" : "DEMO_SQLSERVER_Win",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "dbo/odbc_test",
+            "dbSchema" : "dbo",
+            "label" : "odbc_test",
+            "objectName" : "odbc_test",
+            "path" : "dbo/odbc_test",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "NumTry",
+                "fieldType" : "CONNECTOR",
+                "label" : "NumTry",
+                "nativeName" : "NumTry",
+                "nativeType" : "integer",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/odbc_test"
+                  }
+                ]
+              },
+              {
+                "name" : "testResults",
+                "fieldType" : "CONNECTOR",
+                "label" : "testResults",
+                "nativeName" : "testResults",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/odbc_test"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2026-01-19T02:31:58.591Z",
+        "name" : "ターゲット",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "NumTry"
+            },
+            "name" : "NumTry",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "testResults"
+            },
+            "name" : "testResults",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@801KPVAuSzMeVi47xrG3ay",
+          "connectionName" : "DEMO_SQLSERVER_Win",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "dbo/odbc_test",
+            "dbSchema" : "dbo",
+            "label" : "odbc_test",
+            "objectName" : "odbc_test",
+            "path" : "dbo/odbc_test",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "NumTry",
+                "fieldType" : "CONNECTOR",
+                "label" : "NumTry",
+                "nativeName" : "NumTry",
+                "nativeType" : "integer",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/odbc_test"
+                  }
+                ]
+              },
+              {
+                "name" : "testResults",
+                "fieldType" : "CONNECTOR",
+                "label" : "testResults",
+                "nativeName" : "testResults",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/odbc_test"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "NumTry",
+              "toField" : {
+                "name" : "NumTry"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "testResults",
+              "toField" : {
+                "name" : "testResults"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-02-24 10:55:18 JST"
+}

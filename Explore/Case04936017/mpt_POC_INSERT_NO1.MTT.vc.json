@@ -1,0 +1,191 @@
+{
+  "name" : "mpt_POC_INSERT_NO1",
+  "runtimeEnvironmentId" : "@9lOomKAztT0bSRPHBmq9ql",
+  "runtimeEnvironmentName" : "invtmdcdgc01.informatica.com",
+  "maxLogs" : 10,
+  "parameters" : [
+    {
+      "name" : "$ソース$",
+      "type" : "EXTENDED_SOURCE",
+      "label" : "ソース",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "isSelectDistinct" : "false",
+        "isMsrcFilterParameterized" : "false",
+        "isMsrcSortParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "flags" : "SUPPORTS_MULTI_SCHEMA",
+        "originalPath" : "ソース"
+      },
+      "sourceConnectionId" : "@801KPVAuSzMeVi47xrG3ay",
+      "connectionName" : "DEMO_SQLSERVER_Win",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "object" : {
+          "name" : "dbo/source_tab",
+          "label" : "source_tab",
+          "metadataUpdated" : false,
+          "dbSchema" : "dbo"
+        },
+        "singleMode" : true,
+        "objects" : [
+          {
+            "name" : "dbo/source_tab",
+            "label" : "source_tab",
+            "metadataUpdated" : false,
+            "dbSchema" : "dbo"
+          }
+        ]
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "fetchMode" : "ORIGINAL",
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    },
+    {
+      "name" : "$ターゲット$",
+      "type" : "TARGET",
+      "label" : "ターゲット",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "flags" : "SUPPORTS_MULTI_SCHEMA",
+        "supportApplyDDLChanges" : "false",
+        "originalPath" : "ターゲット"
+      },
+      "targetConnectionId" : "@801KPVAuSzMeVi47xrG3ay",
+      "connectionName" : "DEMO_SQLSERVER_Win",
+      "targetObject" : "dbo/target_tab",
+      "targetObjectLabel" : "target_tab",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : true,
+      "bulkApiDBTarget" : false,
+      "operationType" : "Insert",
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "singleMode" : true
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "dbo/target_tab",
+      "objectLabel" : "target_tab",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "fetchMode" : "ORIGINAL",
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "dbSchema" : "dbo",
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    },
+    {
+      "name" : "$SQL$",
+      "type" : "CONNECTION",
+      "label" : "SQL",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "isSQLConnectionParam" : "true",
+        "originalPath" : "SQL"
+      },
+      "transfConnectionId" : "@801KPVAuSzMeVi47xrG3ay",
+      "connectionName" : "DEMO_SQLSERVER_Win",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : true,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "customFuncCfg" : { },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "POC_INSERT_NO1",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "fetchMode" : "ORIGINAL",
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "nmoSubType" : "STORED_PROCEDURE",
+      "restmodernSource" : true,
+      "unspecified" : false,
+      "fileList" : false
+    }
+  ],
+  "verbose" : true,
+  "lastRunTime" : 1770348769000,
+  "mappingId" : "@2MUIynV6Fg2bhIVH4WfJ2d",
+  "mappingTemplateName" : "mp_POC_INSERT_NO1",
+  "sessionPropertiesList" : [
+    {
+      "name" : "Custom Properties",
+      "value" : "UseLinuxOdbcV2=1"
+    },
+    {
+      "name" : "Pushdown Optimization",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Context",
+      "value" : "None"
+    },
+    {
+      "name" : "Pushdown Optimization Fallback Option",
+      "value" : "Partial PDO"
+    }
+  ],
+  "hidden" : false,
+  "enableCrossSchemaPushdown" : true,
+  "enableParallelRun" : false,
+  "autoTunedApplied" : false,
+  "autoTunedAppliedType" : "NONE",
+  "paramFileType" : "PARAM_FILE_LOCAL",
+  "schemaMode" : "async",
+  "valid" : true,
+  "optimizationPlan" : "NONE",
+  "allowMaxFieldLength" : false,
+  "specialCharacterSupport" : false,
+  "midstreamPreview" : false,
+  "vcsExportTime" : "2026-02-24 10:55:22 JST"
+}

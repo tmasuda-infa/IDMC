@@ -1,0 +1,93 @@
+{
+  "objectInfo" : {
+    "id" : "jIW0yKRg0IJeEQ3w9D4dKw",
+    "name" : "mpt_POC_INSERT_NO2",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01006K0Z00000000008W"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2026-02-24T01:55:24.660Z",
+  "objectRefs" : [ {
+    "id" : "9lOomKAztT0bSRPHBmq9ql",
+    "name" : "invtmdcdgc01.informatica.com",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01006K25000000000012"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Linux SA 環境",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "801KPVAuSzMeVi47xrG3ay",
+    "name" : "DEMO_SQLSERVER_Win",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01006K0B00000000002I"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "2X5YYU613bkk0r8D783vGM",
+    "name" : "mp_POC_INSERT_NO2",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01006K1700000000007W"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Case04936017"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

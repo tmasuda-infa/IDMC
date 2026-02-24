@@ -1,0 +1,270 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "mp_POC_INSERT_NO4",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "ソース -> ターゲット"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2026-01-19T02:31:58.591Z",
+        "name" : "ソース",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "c1"
+            },
+            "name" : "c1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@801KPVAuSzMeVi47xrG3ay",
+          "connectionName" : "DEMO_SQLSERVER_Win",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "dbo/source_tab",
+            "dbSchema" : "dbo",
+            "label" : "source_tab",
+            "objectName" : "source_tab",
+            "path" : "dbo/source_tab",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "c1",
+                "fieldType" : "CONNECTOR",
+                "label" : "c1",
+                "nativeName" : "c1",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/source_tab"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2026-01-19T02:31:58.591Z",
+        "name" : "ターゲット",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "c1"
+            },
+            "name" : "c1",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@801KPVAuSzMeVi47xrG3ay",
+          "connectionName" : "DEMO_SQLSERVER_Win",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "SqlServer",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "dbo/target_tab",
+            "dbSchema" : "dbo",
+            "label" : "target_tab",
+            "objectName" : "target_tab",
+            "path" : "dbo/target_tab",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "c1",
+                "fieldType" : "CONNECTOR",
+                "label" : "c1",
+                "nativeName" : "c1",
+                "nativeType" : "integer",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "dbo/target_tab"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "true",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "c1",
+              "toField" : {
+                "name" : "c1"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2026-01-19T02:33:31.886Z",
+        "name" : "SQL",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Subsecond Precision",
+            "value" : "6"
+          },
+          {
+            "name" : "Stored Procedure Type",
+            "value" : "Target Pre Load "
+          },
+          {
+            "name" : "Call Text",
+            "value" : "dbo.POC_INSERT_NO4"
+          },
+          {
+            "name" : "Execution Order",
+            "value" : "1"
+          }
+        ],
+        "fieldMappingMode" : "MANUAL",
+        "unconnected" : "true",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "RETURN_VALUE"
+            },
+            "name" : "RETURN_VALUE",
+            "platformType" : {
+              "name" : "integer"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "fieldType" : "RETURN_VALUE"
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@801KPVAuSzMeVi47xrG3ay",
+          "connectionName" : "DEMO_SQLSERVER_Win",
+          "sql" : "POC_INSERT_NO4",
+          "sqlMetadataEdited" : "false",
+          "sqlType" : "STORED_PROCEDURE",
+          "typeSystem" : "SqlServer",
+          "fields" : [
+            {
+              "name" : "RETURN_VALUE",
+              "fieldType" : "CONNECTOR",
+              "label" : "RETURN_VALUE",
+              "nativeName" : "RETURN_VALUE",
+              "nativeType" : "integer",
+              "original" : "false",
+              "precision" : 10,
+              "scale" : 0,
+              "properties" : [
+                {
+                  "name" : "parentObject",
+                  "value" : "POC_INSERT_NO4"
+                },
+                {
+                  "name" : "PROCEDURE_FIELD_TYPE",
+                  "value" : "RETURN_VALUE"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-02-24 10:55:19 JST"
+}
