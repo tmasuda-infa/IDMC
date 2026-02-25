@@ -1,0 +1,2208 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "mp_test_No02 - EXPENSE_TYPE_NAME",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "CCF_JOURNAL_WORK_SRC -> CCF_JOURNAL_WORK"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2024-10-21T00:38:46.570Z",
+        "name" : "CCF_JOURNAL_WORK_SRC",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "File Reader Truncate String Null",
+            "value" : "NO"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "EXPENSE_TYPE_NAME_V2"
+            },
+            "name" : "EXPENSE_TYPE_NAME_V2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 128,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EXPENSE_TYPE_NAME_NV2"
+            },
+            "name" : "EXPENSE_TYPE_NAME_NV2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 256,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@fYTWPHm6liFjtcZhL13s22",
+          "connectionName" : "tmd_Oracle",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "CCF_JOURNAL_WORK_SRC",
+            "label" : "CCF_JOURNAL_WORK_SRC",
+            "objectName" : "CCF_JOURNAL_WORK_SRC",
+            "path" : "CCF_JOURNAL_WORK_SRC",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "EXPENSE_TYPE_NAME_V2",
+                "fieldType" : "CONNECTOR",
+                "label" : "EXPENSE_TYPE_NAME_V2",
+                "nativeName" : "EXPENSE_TYPE_NAME_V2",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 128,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK_SRC"
+                  }
+                ]
+              },
+              {
+                "name" : "EXPENSE_TYPE_NAME_NV2",
+                "fieldType" : "CONNECTOR",
+                "label" : "EXPENSE_TYPE_NAME_NV2",
+                "nativeName" : "EXPENSE_TYPE_NAME_NV2",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 256,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK_SRC"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2024-10-21T00:38:46.570Z",
+        "name" : "CCF_JOURNAL_WORK",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "TRANSACTION_CODE"
+            },
+            "name" : "TRANSACTION_CODE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 100,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TRANSACTION_CODE_LINE_NUMBER"
+            },
+            "name" : "TRANSACTION_CODE_LINE_NUMBER",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PROVISIONAL_DOCUMENT_NUMBER"
+            },
+            "name" : "PROVISIONAL_DOCUMENT_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DOCUMENT_NUMBER"
+            },
+            "name" : "DOCUMENT_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FISCAL_YEAR"
+            },
+            "name" : "FISCAL_YEAR",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "COMPANY_CODE"
+            },
+            "name" : "COMPANY_CODE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DOCUMENT_TYPE"
+            },
+            "name" : "DOCUMENT_TYPE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DOCUMENT_DATE"
+            },
+            "name" : "DOCUMENT_DATE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "POSTING_DATE"
+            },
+            "name" : "POSTING_DATE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CURRENCY"
+            },
+            "name" : "CURRENCY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 5,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CONVERSION_DATE"
+            },
+            "name" : "CONVERSION_DATE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CONVERSION_RATE"
+            },
+            "name" : "CONVERSION_RATE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 9,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "REF_DOCUMENT_NUMBER"
+            },
+            "name" : "REF_DOCUMENT_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 16,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DOCUMENT_HEADER_TEXT"
+            },
+            "name" : "DOCUMENT_HEADER_TEXT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 75,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "OPPOSITE_JOURNAL_DOCUMENT_NUM"
+            },
+            "name" : "OPPOSITE_JOURNAL_DOCUMENT_NUM",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CF_DOCUMENT_NUMBER"
+            },
+            "name" : "CF_DOCUMENT_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CF_DOCUMENT_TYPE"
+            },
+            "name" : "CF_DOCUMENT_TYPE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CF_HEADER_TEXT"
+            },
+            "name" : "CF_HEADER_TEXT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 25,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LINE_NUMBER"
+            },
+            "name" : "LINE_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 5,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "POSTING_KEY"
+            },
+            "name" : "POSTING_KEY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ACCOUNT_ITEM_CODE"
+            },
+            "name" : "ACCOUNT_ITEM_CODE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ACCOUNT"
+            },
+            "name" : "ACCOUNT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DETAIL"
+            },
+            "name" : "DETAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DOCUMENT_CURRENCY_AMOUNT"
+            },
+            "name" : "DOCUMENT_CURRENCY_AMOUNT",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 23,
+            "scale" : 2
+          },
+          {
+            "adapterField" : {
+              "name" : "DOMESTIC_CURRENCY_AMOUNT"
+            },
+            "name" : "DOMESTIC_CURRENCY_AMOUNT",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 23,
+            "scale" : 2
+          },
+          {
+            "adapterField" : {
+              "name" : "TAX_CODE"
+            },
+            "name" : "TAX_CODE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PROFIT_CENTER"
+            },
+            "name" : "PROFIT_CENTER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "COST_CENTER"
+            },
+            "name" : "COST_CENTER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SUPPLIERS"
+            },
+            "name" : "SUPPLIERS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 7,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LINE_TEXT"
+            },
+            "name" : "LINE_TEXT",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 150,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DECISION_NUMBER"
+            },
+            "name" : "DECISION_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 12,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "APPROVAL_ROUTE"
+            },
+            "name" : "APPROVAL_ROUTE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "REF_KEY1"
+            },
+            "name" : "REF_KEY1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 12,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "REF_KEY3"
+            },
+            "name" : "REF_KEY3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 90,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SORT_KEY"
+            },
+            "name" : "SORT_KEY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 90,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PLANNING_LEVEL"
+            },
+            "name" : "PLANNING_LEVEL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VALUE_DATE"
+            },
+            "name" : "VALUE_DATE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RESERVE1"
+            },
+            "name" : "RESERVE1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RESERVE2"
+            },
+            "name" : "RESERVE2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TRANSCATION_TYPE"
+            },
+            "name" : "TRANSCATION_TYPE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CUSTOMER_NUMBER"
+            },
+            "name" : "CUSTOMER_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SUPPLIER_CODE"
+            },
+            "name" : "SUPPLIER_CODE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PAYMENT_TERMS"
+            },
+            "name" : "PAYMENT_TERMS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 4,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PAYMENT_REF_DATE"
+            },
+            "name" : "PAYMENT_REF_DATE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CASH_ADVANCE"
+            },
+            "name" : "CASH_ADVANCE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PAYMENT_HOLD"
+            },
+            "name" : "PAYMENT_HOLD",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BANK_CODE"
+            },
+            "name" : "BANK_CODE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DEPOSIT_TYPE"
+            },
+            "name" : "DEPOSIT_TYPE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ACCOUNT_NUMBER"
+            },
+            "name" : "ACCOUNT_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 18,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ACCOUNT_HOLDER"
+            },
+            "name" : "ACCOUNT_HOLDER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 105,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TRANSCATION_BANK"
+            },
+            "name" : "TRANSCATION_BANK",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 5,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ACCOUNT_ID"
+            },
+            "name" : "ACCOUNT_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 5,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FEE_BURDEN_CODE1"
+            },
+            "name" : "FEE_BURDEN_CODE1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FEE_BURDEN_CODE2"
+            },
+            "name" : "FEE_BURDEN_CODE2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FEE_BURDEN_CODE3"
+            },
+            "name" : "FEE_BURDEN_CODE3",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SUPPLYING_COUNTRY"
+            },
+            "name" : "SUPPLYING_COUNTRY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 3,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "WITHHOLDING_TAX"
+            },
+            "name" : "WITHHOLDING_TAX",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "WITHHOLDING_TAX_BASE"
+            },
+            "name" : "WITHHOLDING_TAX_BASE",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 23,
+            "scale" : 2
+          },
+          {
+            "adapterField" : {
+              "name" : "WITHHOLDING_TAX_AMOUNT"
+            },
+            "name" : "WITHHOLDING_TAX_AMOUNT",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 23,
+            "scale" : 2
+          },
+          {
+            "adapterField" : {
+              "name" : "ITEM1"
+            },
+            "name" : "ITEM1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ITEM2"
+            },
+            "name" : "ITEM2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VOUCHER_RECEIPT_DATE"
+            },
+            "name" : "VOUCHER_RECEIPT_DATE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 8,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CORRESPONDING_DATE_FROM"
+            },
+            "name" : "CORRESPONDING_DATE_FROM",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 7,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CORRESPONDING_DATE_TO"
+            },
+            "name" : "CORRESPONDING_DATE_TO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 7,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TAX_RATE"
+            },
+            "name" : "TAX_RATE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CREATE_TAX_LINE_FLAG"
+            },
+            "name" : "CREATE_TAX_LINE_FLAG",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LINE_GROUP_ID"
+            },
+            "name" : "LINE_GROUP_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 300,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LINE_TYPE"
+            },
+            "name" : "LINE_TYPE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "OPPONENT_VALUE"
+            },
+            "name" : "OPPONENT_VALUE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NUMBERING_REF_DOCUMENT_NUM_ID"
+            },
+            "name" : "NUMBERING_REF_DOCUMENT_NUM_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 150,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CREATE_DATE"
+            },
+            "name" : "CREATE_DATE",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "PURCHASE_DEDUCTION_FLAG"
+            },
+            "name" : "PURCHASE_DEDUCTION_FLAG",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 48,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TRANSACTION_DATE"
+            },
+            "name" : "TRANSACTION_DATE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EXPENSE_TYPE_NAME"
+            },
+            "name" : "EXPENSE_TYPE_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 64,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@fYTWPHm6liFjtcZhL13s22",
+          "connectionName" : "tmd_Oracle",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "CCF_JOURNAL_WORK",
+            "label" : "CCF_JOURNAL_WORK",
+            "objectName" : "CCF_JOURNAL_WORK",
+            "path" : "CCF_JOURNAL_WORK",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "TRANSACTION_CODE",
+                "fieldType" : "CONNECTOR",
+                "label" : "TRANSACTION_CODE",
+                "nativeName" : "TRANSACTION_CODE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 100,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "TRANSACTION_CODE_LINE_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "TRANSACTION_CODE_LINE_NUMBER",
+                "nativeName" : "TRANSACTION_CODE_LINE_NUMBER",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "PROVISIONAL_DOCUMENT_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "PROVISIONAL_DOCUMENT_NUMBER",
+                "nativeName" : "PROVISIONAL_DOCUMENT_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "DOCUMENT_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "DOCUMENT_NUMBER",
+                "nativeName" : "DOCUMENT_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "FISCAL_YEAR",
+                "fieldType" : "CONNECTOR",
+                "label" : "FISCAL_YEAR",
+                "nativeName" : "FISCAL_YEAR",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "COMPANY_CODE",
+                "fieldType" : "CONNECTOR",
+                "label" : "COMPANY_CODE",
+                "nativeName" : "COMPANY_CODE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "DOCUMENT_TYPE",
+                "fieldType" : "CONNECTOR",
+                "label" : "DOCUMENT_TYPE",
+                "nativeName" : "DOCUMENT_TYPE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "DOCUMENT_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "DOCUMENT_DATE",
+                "nativeName" : "DOCUMENT_DATE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "POSTING_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "POSTING_DATE",
+                "nativeName" : "POSTING_DATE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CURRENCY",
+                "fieldType" : "CONNECTOR",
+                "label" : "CURRENCY",
+                "nativeName" : "CURRENCY",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 5,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CONVERSION_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "CONVERSION_DATE",
+                "nativeName" : "CONVERSION_DATE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CONVERSION_RATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "CONVERSION_RATE",
+                "nativeName" : "CONVERSION_RATE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 9,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "REF_DOCUMENT_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "REF_DOCUMENT_NUMBER",
+                "nativeName" : "REF_DOCUMENT_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 16,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "DOCUMENT_HEADER_TEXT",
+                "fieldType" : "CONNECTOR",
+                "label" : "DOCUMENT_HEADER_TEXT",
+                "nativeName" : "DOCUMENT_HEADER_TEXT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 75,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "OPPOSITE_JOURNAL_DOCUMENT_NUM",
+                "fieldType" : "CONNECTOR",
+                "label" : "OPPOSITE_JOURNAL_DOCUMENT_NUM",
+                "nativeName" : "OPPOSITE_JOURNAL_DOCUMENT_NUM",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CF_DOCUMENT_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "CF_DOCUMENT_NUMBER",
+                "nativeName" : "CF_DOCUMENT_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CF_DOCUMENT_TYPE",
+                "fieldType" : "CONNECTOR",
+                "label" : "CF_DOCUMENT_TYPE",
+                "nativeName" : "CF_DOCUMENT_TYPE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CF_HEADER_TEXT",
+                "fieldType" : "CONNECTOR",
+                "label" : "CF_HEADER_TEXT",
+                "nativeName" : "CF_HEADER_TEXT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 25,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "LINE_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "LINE_NUMBER",
+                "nativeName" : "LINE_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 5,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "POSTING_KEY",
+                "fieldType" : "CONNECTOR",
+                "label" : "POSTING_KEY",
+                "nativeName" : "POSTING_KEY",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "ACCOUNT_ITEM_CODE",
+                "fieldType" : "CONNECTOR",
+                "label" : "ACCOUNT_ITEM_CODE",
+                "nativeName" : "ACCOUNT_ITEM_CODE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "ACCOUNT",
+                "fieldType" : "CONNECTOR",
+                "label" : "ACCOUNT",
+                "nativeName" : "ACCOUNT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "DETAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "DETAIL",
+                "nativeName" : "DETAIL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "DOCUMENT_CURRENCY_AMOUNT",
+                "fieldType" : "CONNECTOR",
+                "label" : "DOCUMENT_CURRENCY_AMOUNT",
+                "nativeName" : "DOCUMENT_CURRENCY_AMOUNT",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 2,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "DOMESTIC_CURRENCY_AMOUNT",
+                "fieldType" : "CONNECTOR",
+                "label" : "DOMESTIC_CURRENCY_AMOUNT",
+                "nativeName" : "DOMESTIC_CURRENCY_AMOUNT",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 2,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "TAX_CODE",
+                "fieldType" : "CONNECTOR",
+                "label" : "TAX_CODE",
+                "nativeName" : "TAX_CODE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "PROFIT_CENTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "PROFIT_CENTER",
+                "nativeName" : "PROFIT_CENTER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "COST_CENTER",
+                "fieldType" : "CONNECTOR",
+                "label" : "COST_CENTER",
+                "nativeName" : "COST_CENTER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "SUPPLIERS",
+                "fieldType" : "CONNECTOR",
+                "label" : "SUPPLIERS",
+                "nativeName" : "SUPPLIERS",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 7,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "LINE_TEXT",
+                "fieldType" : "CONNECTOR",
+                "label" : "LINE_TEXT",
+                "nativeName" : "LINE_TEXT",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 150,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "DECISION_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "DECISION_NUMBER",
+                "nativeName" : "DECISION_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 12,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "APPROVAL_ROUTE",
+                "fieldType" : "CONNECTOR",
+                "label" : "APPROVAL_ROUTE",
+                "nativeName" : "APPROVAL_ROUTE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "REF_KEY1",
+                "fieldType" : "CONNECTOR",
+                "label" : "REF_KEY1",
+                "nativeName" : "REF_KEY1",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 12,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "REF_KEY3",
+                "fieldType" : "CONNECTOR",
+                "label" : "REF_KEY3",
+                "nativeName" : "REF_KEY3",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 90,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "SORT_KEY",
+                "fieldType" : "CONNECTOR",
+                "label" : "SORT_KEY",
+                "nativeName" : "SORT_KEY",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 90,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "PLANNING_LEVEL",
+                "fieldType" : "CONNECTOR",
+                "label" : "PLANNING_LEVEL",
+                "nativeName" : "PLANNING_LEVEL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "VALUE_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "VALUE_DATE",
+                "nativeName" : "VALUE_DATE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "RESERVE1",
+                "fieldType" : "CONNECTOR",
+                "label" : "RESERVE1",
+                "nativeName" : "RESERVE1",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "RESERVE2",
+                "fieldType" : "CONNECTOR",
+                "label" : "RESERVE2",
+                "nativeName" : "RESERVE2",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "TRANSCATION_TYPE",
+                "fieldType" : "CONNECTOR",
+                "label" : "TRANSCATION_TYPE",
+                "nativeName" : "TRANSCATION_TYPE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CUSTOMER_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "CUSTOMER_NUMBER",
+                "nativeName" : "CUSTOMER_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "SUPPLIER_CODE",
+                "fieldType" : "CONNECTOR",
+                "label" : "SUPPLIER_CODE",
+                "nativeName" : "SUPPLIER_CODE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "PAYMENT_TERMS",
+                "fieldType" : "CONNECTOR",
+                "label" : "PAYMENT_TERMS",
+                "nativeName" : "PAYMENT_TERMS",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 4,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "PAYMENT_REF_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "PAYMENT_REF_DATE",
+                "nativeName" : "PAYMENT_REF_DATE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CASH_ADVANCE",
+                "fieldType" : "CONNECTOR",
+                "label" : "CASH_ADVANCE",
+                "nativeName" : "CASH_ADVANCE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "PAYMENT_HOLD",
+                "fieldType" : "CONNECTOR",
+                "label" : "PAYMENT_HOLD",
+                "nativeName" : "PAYMENT_HOLD",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "BANK_CODE",
+                "fieldType" : "CONNECTOR",
+                "label" : "BANK_CODE",
+                "nativeName" : "BANK_CODE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "DEPOSIT_TYPE",
+                "fieldType" : "CONNECTOR",
+                "label" : "DEPOSIT_TYPE",
+                "nativeName" : "DEPOSIT_TYPE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "ACCOUNT_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "ACCOUNT_NUMBER",
+                "nativeName" : "ACCOUNT_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 18,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "ACCOUNT_HOLDER",
+                "fieldType" : "CONNECTOR",
+                "label" : "ACCOUNT_HOLDER",
+                "nativeName" : "ACCOUNT_HOLDER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 105,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "TRANSCATION_BANK",
+                "fieldType" : "CONNECTOR",
+                "label" : "TRANSCATION_BANK",
+                "nativeName" : "TRANSCATION_BANK",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 5,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "ACCOUNT_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ACCOUNT_ID",
+                "nativeName" : "ACCOUNT_ID",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 5,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "FEE_BURDEN_CODE1",
+                "fieldType" : "CONNECTOR",
+                "label" : "FEE_BURDEN_CODE1",
+                "nativeName" : "FEE_BURDEN_CODE1",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "FEE_BURDEN_CODE2",
+                "fieldType" : "CONNECTOR",
+                "label" : "FEE_BURDEN_CODE2",
+                "nativeName" : "FEE_BURDEN_CODE2",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "FEE_BURDEN_CODE3",
+                "fieldType" : "CONNECTOR",
+                "label" : "FEE_BURDEN_CODE3",
+                "nativeName" : "FEE_BURDEN_CODE3",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "SUPPLYING_COUNTRY",
+                "fieldType" : "CONNECTOR",
+                "label" : "SUPPLYING_COUNTRY",
+                "nativeName" : "SUPPLYING_COUNTRY",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 3,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "WITHHOLDING_TAX",
+                "fieldType" : "CONNECTOR",
+                "label" : "WITHHOLDING_TAX",
+                "nativeName" : "WITHHOLDING_TAX",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "WITHHOLDING_TAX_BASE",
+                "fieldType" : "CONNECTOR",
+                "label" : "WITHHOLDING_TAX_BASE",
+                "nativeName" : "WITHHOLDING_TAX_BASE",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 2,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "WITHHOLDING_TAX_AMOUNT",
+                "fieldType" : "CONNECTOR",
+                "label" : "WITHHOLDING_TAX_AMOUNT",
+                "nativeName" : "WITHHOLDING_TAX_AMOUNT",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 2,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "ITEM1",
+                "fieldType" : "CONNECTOR",
+                "label" : "ITEM1",
+                "nativeName" : "ITEM1",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "ITEM2",
+                "fieldType" : "CONNECTOR",
+                "label" : "ITEM2",
+                "nativeName" : "ITEM2",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "VOUCHER_RECEIPT_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "VOUCHER_RECEIPT_DATE",
+                "nativeName" : "VOUCHER_RECEIPT_DATE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 8,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CORRESPONDING_DATE_FROM",
+                "fieldType" : "CONNECTOR",
+                "label" : "CORRESPONDING_DATE_FROM",
+                "nativeName" : "CORRESPONDING_DATE_FROM",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 7,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CORRESPONDING_DATE_TO",
+                "fieldType" : "CONNECTOR",
+                "label" : "CORRESPONDING_DATE_TO",
+                "nativeName" : "CORRESPONDING_DATE_TO",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 7,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "TAX_RATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "TAX_RATE",
+                "nativeName" : "TAX_RATE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CREATE_TAX_LINE_FLAG",
+                "fieldType" : "CONNECTOR",
+                "label" : "CREATE_TAX_LINE_FLAG",
+                "nativeName" : "CREATE_TAX_LINE_FLAG",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "LINE_GROUP_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "LINE_GROUP_ID",
+                "nativeName" : "LINE_GROUP_ID",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 300,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "LINE_TYPE",
+                "fieldType" : "CONNECTOR",
+                "label" : "LINE_TYPE",
+                "nativeName" : "LINE_TYPE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "OPPONENT_VALUE",
+                "fieldType" : "CONNECTOR",
+                "label" : "OPPONENT_VALUE",
+                "nativeName" : "OPPONENT_VALUE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "NUMBERING_REF_DOCUMENT_NUM_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "NUMBERING_REF_DOCUMENT_NUM_ID",
+                "nativeName" : "NUMBERING_REF_DOCUMENT_NUM_ID",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 150,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "CREATE_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "CREATE_DATE",
+                "nativeName" : "CREATE_DATE",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "PURCHASE_DEDUCTION_FLAG",
+                "fieldType" : "CONNECTOR",
+                "label" : "PURCHASE_DEDUCTION_FLAG",
+                "nativeName" : "PURCHASE_DEDUCTION_FLAG",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 48,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "TRANSACTION_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "TRANSACTION_DATE",
+                "nativeName" : "TRANSACTION_DATE",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              },
+              {
+                "name" : "EXPENSE_TYPE_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "EXPENSE_TYPE_NAME",
+                "nativeName" : "EXPENSE_TYPE_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 64,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CCF_JOURNAL_WORK"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "true",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "EXPENSE_TYPE_NAME_V2",
+              "toField" : {
+                "name" : "EXPENSE_TYPE_NAME"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2026-02-25 09:22:30 JST"
+}

@@ -1,0 +1,25 @@
+{
+  "objectInfo" : {
+    "id" : "aXZWXqvhRSogTE77psJTu3",
+    "name" : "CCON-102729",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Oracle Relational DB:Mordenization team facing ORA-12899: value too large for column",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2026-02-25T00:22:31.296Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
